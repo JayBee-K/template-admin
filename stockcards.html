@@ -425,10 +425,10 @@
 				<div class="row">
 					<div class="col-md-12">
 						<div class="inner">
-							Thống kê bán thẻ cào
+							Quản lý kho thẻ
 							<ol class="breadcrumb">
 								<li class="breadcrumb-item"><a href="dashboard.html">Bảng quản trị</a></li>
-								<li class="breadcrumb-item active">Thống kê bán thẻ cào</li>
+								<li class="breadcrumb-item active">Quản lý kho thẻ</li>
 							</ol>
 						</div>
 					</div>
@@ -442,14 +442,14 @@
 					<div class="col-md-6">
 						<div class="d-flex">
 							<div class="text-left">
-								<a class="btn btn-info bg-gradient" href="softcard_orders.html">
+								<a class="btn btn-info bg-gradient" href="stockcards.html">
 									<i class="fal fa-home"></i>Home
 								</a>
-								<a class="btn btn-success bg-gradient" href="softcard_setting.html">
-									<i class="fal fa-cog"></i> Cấu hình
+								<a class="btn btn-success bg-gradient" href="stockcards_import.html">
+									<i class="fal fa-plus"></i> Nhập thẻ
 								</a>
-								<a class="btn btn-secondary bg-gradient" href="softcard_create.html">
-									<i class="fal fa-plus"></i>Thêm
+								<a class="btn btn-secondary bg-gradient" href="statistical_stockcard.html">
+									<i class="fal fa-plus"></i> Hàng tồn
 								</a>
 							</div>
 							<div class="ml-1">
@@ -536,7 +536,8 @@
 									<option value="">Đã bán</option>
 								</select>
 								<button class="btn btn-primary"><i class="fal fa-search"></i>Lọc</button>
-								<button class="btn btn-success"><i class="fal fa-download"></i>Xuất</button>							</form>
+								<button class="btn btn-success"><i class="fal fa-download"></i>Xuất</button>
+							</form>
 						</div>
 					</div>
 				</div>
@@ -550,188 +551,84 @@
 						<div class="card">
 							<div class="card-body">
 								<div class="card-title">
-									Thống kê danh sách bán thẻ cào
+									Quản lý kho thẻ
 								</div>
 								<div class="table-responsive">
 									<table class="table thead-light">
 										<thead>
 										<tr>
+											<th>
+												<label class="form-check-label" for="checkall">
+													<input type="checkbox" id="checkall"
+													       class="form-check-input">
+												</label>
+											</th>
 											<th>ID</th>
-											<th>Khách hàng</th>
-											<th>Sản phẩm</th>
 											<th>Mã dịch vụ</th>
-											<th>NCC</th>
 											<th>Mệnh giá</th>
-											<th>Số lượng</th>
-											<th>Số tiền</th>
-											<th>Trạng thái</th>
+											<th>Serial</th>
+											<th>Thời hạn</th>
+											<th>Người tạo</th>
 											<th>Ngày tạo</th>
+											<th>Ngày bán</th>
+											<th>Trạng thái</th>
+											<th>Ưu tiên</th>
+											<th>Ghi chú</th>
+											<th>Order ID</th>
+											<th>Action</th>
 										</tr>
 										</thead>
 										<tbody>
 										<tr>
 											<td>
-												S604350D563060
+												<label class="form-check-label">
+													<input type="checkbox" name="check[]"
+													       class="form-check-input mycheckbox">
+												</label>
 											</td>
+											<td>38</td>
 											<td>
-												ID:2 --- Khách --- <a href="">Xem</a> <br>
-												no_reply@nencer.net <br>
-												0900000000
-											</td>
-											<td>
-												Viettel 100.000đ
-											</td>
-											<td>
-												Viettel
-											</td>
-											<td>
-												Netpay
-											</td>
-											<td>
-												100.000đ
-											</td>
-											<td>
-												1
-											</td>
-											<td>
-												97.000 đ
-											</td>
-											<td>
-												<label class="badge badge-dark">Nháp</label>
-											</td>
-											<td>
-												2021-03-14 17:33:32
-											</td>
-										</tr>
-										<tr>
-											<td>
-												S604DE67AC1F1B
-											</td>
-											<td>
-												ID:2 --- Khách --- <a href="">Xem</a> <br>
-												no_reply@nencer.net <br>
-												0900000000
-											</td>
-											<td>
-												1 Viettel 100.000đ
-											</td>
-											<td>
-												Viettel
-											</td>
-											<td>
-												Stock
-											</td>
-											<td>
-												100.000đ
-											</td>
-											<td>
-												1
-											</td>
-											<td>
-												97.000 đ
-											</td>
-											<td>
-												<label class="badge badge-success">Thành công</label>
-											</td>
-											<td>
-												2021-03-14 17:33:32
-											</td>
-										</tr>
-										<tr>
-											<td>
-												S604350D563060
-											</td>
-											<td>
-												ID:2 --- Khách --- <a href="">Xem</a> <br>
-												no_reply@nencer.net <br>
-												0900000000
+												FA9732
 											</td>
 											<td>
 												Viettel 100.000đ
 											</td>
 											<td>
-												Viettel
+												1205 5412 9854 2514
 											</td>
 											<td>
-												Netpay
+												2021-03-14 17:33:32
 											</td>
 											<td>
-												100.000đ
+												Admin
+											</td>
+											<td>
+												2021-03-14 17:33:32
+											</td>
+											<td>
+												2021-03-14 17:33:32
+											</td>
+											<td>
+												<label for="" class="badge badge-success">Hoàn thành</label>
 											</td>
 											<td>
 												1
 											</td>
 											<td>
-												97.000 đ
+												Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi, error?
 											</td>
+											<td>FA92323</td>
 											<td>
-												<label class="badge badge-dark">Nháp</label>
-											</td>
-											<td>
-												2021-03-14 17:33:32
-											</td>
-										</tr>
-										<tr>
-											<td>
-												S604DE67AC1F1B
-											</td>
-											<td>
-												ID:2 --- Khách --- <a href="">Xem</a> <br>
-												no_reply@nencer.net <br>
-												0900000000
-											</td>
-											<td>
-												1 Viettel 100.000đ
-											</td>
-											<td>
-												Viettel
-											</td>
-											<td>
-												Stock
-											</td>
-											<td>
-												100.000đ
-											</td>
-											<td>
-												1
-											</td>
-											<td>
-												97.000 đ
-											</td>
-											<td>
-												<label class="badge badge-success">Thành công</label>
-											</td>
-											<td>
-												2021-03-14 17:33:32
+												<a href="softcard_edit.html" class="btn btn-info btn-sm bg-gradient">
+													<i class="fas fa-pen mr-0"></i>
+												</a>
+												<a href="javascript:void(0)"
+												   class="btn btn-danger btn-sm bg-gradient delete-item">
+													<i class="fas fa-trash mr-0"></i>
+												</a>
 											</td>
 										</tr>
 										</tbody>
-										<tfoot>
-										<tr>
-											<th class="text-right" colspan="9">
-												Tổng tiền:
-											</th>
-											<th class="text-right" colspan="1">
-												200.000 đ
-											</th>
-										</tr>
-										<tr>
-											<th class="text-right" colspan="9">
-												Tổng thẻ:
-											</th>
-											<th class="text-right" colspan="1">
-												2 thẻ
-											</th>
-										</tr>
-										<tr>
-											<th class="text-right" colspan="9">
-												Thành tiền:
-											</th>
-											<th class="text-right" colspan="1">
-												194.000 đ
-											</th>
-										</tr>
-										</tfoot>
 									</table>
 								</div>
 							</div>

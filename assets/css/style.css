@@ -28,7 +28,8 @@ textarea {
 
 input:focus,
 select:focus,
-textarea:focus {
+textarea:focus,
+.custom-file-input:focus ~ .custom-file-label {
     -webkit-box-shadow: none !important;
     box-shadow: none !important;
     outline: none !important;
@@ -840,6 +841,17 @@ textarea:focus {
     margin-bottom: 0;
 }
 
+.template-administrator .card-box .card .card-body .img-preview {
+    max-height: 100px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.template-administrator .card-box .card .card-body .img-preview img {
+    width: auto;
+    max-width: 100%;
+}
+
 .template-administrator .card-box .card .table {
     font-size: .975em;
 }
@@ -974,8 +986,7 @@ textarea:focus {
     flex-flow: row nowrap;
 }
 
-.template-administrator .form-inline > * {
-
+.template-administrator .form-inline.flex-1-1 > * {
     flex: 1 1 auto;
 }
 
@@ -996,7 +1007,7 @@ textarea:focus {
     border-radius: 0;
     border-left: 0;
     font-size: 1.05em;
-    line-height: 1.6;
+    line-height: 1.7;
 }
 
 .template-administrator .form-inline .form-control:first-child {
@@ -1066,6 +1077,21 @@ textarea:focus {
     font-size: 1.2em;
     margin-bottom: 7px;
     font-weight: 700;
+}
+
+.template-administrator .card-table .card .card-footer .pagination {
+    margin-bottom: 0;
+    justify-content: flex-end;
+}
+
+.template-administrator .card-table .card .card-footer .pagination li a {
+    color: var(--text-dark);
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.template-administrator .card-table .card .card-footer .pagination li.active a {
+    color: #fff;
 }
 
 @media screen and (max-width: 768px) {
