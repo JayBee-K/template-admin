@@ -425,10 +425,10 @@
 				<div class="row">
 					<div class="col-md-12">
 						<div class="inner">
-							Bảng quản trị
+							Danh sách sản phẩm
 							<ol class="breadcrumb">
-								<li class="breadcrumb-item"><a href="#">Bảng quản trị</a></li>
-								<li class="breadcrumb-item active">Bảng quản trị</li>
+								<li class="breadcrumb-item"><a href="dashboard.html">Bảng quản trị</a></li>
+								<li class="breadcrumb-item active">Danh sách sản phẩm</li>
 							</ol>
 						</div>
 					</div>
@@ -436,536 +436,298 @@
 			</div>
 			<!-- *** End page title *** -->
 			
-			<!-- *** Widget *** -->
-			<div class="widget-box">
-				<div class="row row-5">
-					<div class="col-lg-2 col-sm-4 col-6">
-						<div class="card bg-primary">
-							<div class="card-body">
-								<div class="media">
-									<div class="media-body">
-										<p>
-											Mua thẻ</p>
-										<h2>0 <sup>đ</sup></h2>
-									</div>
-									<div class="avatar rounded-circle bg-soft-light ml-2 align-self-center">
-										<i class="fas fa-credit-card"></i>
-									</div>
-								</div>
-							</div>
+			<!-- *** List button & form inline *** -->
+			<div class="list-button">
+				<div class="row">
+					<div class="col-md-6">
+						<div class="text-left">
+							<a class="btn btn-info bg-gradient" href="softcard_orders.html">
+								<i class="fal fa-home"></i>Home
+							</a>
+							<a class="btn btn-success bg-gradient" href="softcard_setting.html">
+								<i class="fal fa-cog"></i> Cấu hình
+							</a>
+							<a class="btn btn-secondary bg-gradient" href="softcard_create.html">
+								<i class="fal fa-plus"></i>Thêm
+							</a>
 						</div>
 					</div>
-					<div class="col-lg-2 col-sm-4 col-6">
-						<div class="card bg-danger">
-							<div class="card-body">
-								<div class="media">
-									<div class="media-body">
-										<p>
-											Đổi thẻ
-										</p>
-										<h2>0 <sup>đ</sup></h2>
-									</div>
-									<div class="avatar rounded-circle bg-soft-light ml-2 align-self-center">
-										<i class="fas fa-sync-alt"></i>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-2 col-sm-4 col-6">
-						<div class="card bg-warning">
-							<div class="card-body">
-								<div class="media">
-									<div class="media-body">
-										<p>
-											Nạp cước
-										</p>
-										<h2>0 <sup>đ</sup></h2>
-									</div>
-									<div class="avatar rounded-circle bg-soft-light ml-2 align-self-center">
-										<i class="fas fa-bolt"></i>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-2 col-sm-4 col-6">
-						<div class="card bg-info">
-							<div class="card-body">
-								<div class="media">
-									<div class="media-body">
-										<p>
-											Số dư KH
-										</p>
-										<h2>1.145.219 <sup>đ</sup></h2>
-									</div>
-									<div class="avatar rounded-circle bg-soft-light ml-2 align-self-center">
-										<i class="fas fa-money-bill"></i>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-2 col-sm-4 col-6">
-						<div class="card bg-success">
-							<div class="card-body">
-								<div class="media">
-									<div class="media-body">
-										<p>
-											Nạp hôm nay
-										</p>
-										<h2>0 <sup>đ</sup></h2>
-									</div>
-									<div class="avatar rounded-circle bg-soft-light ml-2 align-self-center">
-										<i class="fas fa-plus"></i>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-2 col-sm-4 col-6">
-						<div class="card bg-secondary">
-							<div class="card-body">
-								<div class="media">
-									<div class="media-body">
-										<p>
-											Rút hôm nay
-										</p>
-										<h2>0 <sup>đ</sup></h2>
-									</div>
-									<div class="avatar rounded-circle bg-soft-light ml-2 align-self-center">
-										<i class="fas fa-minus"></i>
-									</div>
-								</div>
-							</div>
+					<div class="col-md-6">
+						<div class="text-right mt-3 mt-md-0">
+							<form action="" class="form-inline justify-content-end">
+								<select name="" class="form-control" id="">
+									<option value="-1">
+										--- Tìm theo ---
+									</option>
+									<option value="">
+										Tên sản phẩm
+									</option>
+									<option value="">
+										Trạng thái tắt
+									</option>
+									<option value="">
+										Trạng thái bật
+									</option>
+								</select>
+								<input type="text" class="form-control" id=""
+								       placeholder="Search">
+								<button class="btn btn-primary"><i class="fal fa-search"></i></button>
+							</form>
 						</div>
 					</div>
 				</div>
 			</div>
-			<!-- *** End Widget *** -->
+			<!-- *** End list button & form inline *** -->
 			
-			<div class="card-box">
-				<div class="row row-10">
-					<div class="col-sm-6 col-lg-3">
+			<!-- *** Card table *** -->
+			<div class="card-table">
+				<div class="row">
+					<div class="col-12">
 						<div class="card">
-							<div class="card-header bg-info">
-								<a href="#card-collapse-01" data-toggle="collapse" aria-expanded="true">
-									<div class="card-title">
-										Đơn nạp tiền
-									</div>
-								</a>
-							</div>
-							<div class="collapse show" id="card-collapse-01">
-								<div class="card-body">
-									<p>
-										Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem id itaque nemo
-										neque nihil perspiciatis possimus quae quam sed sit? Error et explicabo illum
-										magni pariatur quia soluta tenetur voluptate?
-									</p>
+							<div class="card-body">
+								<div class="card-title">
+									Danh sách sản phẩm
 								</div>
 								<div class="table-responsive">
-									<table class="table">
+									<table class="table thead-light">
 										<thead>
 										<tr>
-											<th>#</th>
-											<th>First Name</th>
-											<th>Last Name</th>
-											<th>Username</th>
-										</tr>
-										</thead>
-										<tbody>
-										<tr>
-											<td>1</td>
-											<td>Mark</td>
-											<td>Otto</td>
-											<td>@mdo</td>
-										</tr>
-										<tr>
-											<td>2</td>
-											<td>Jacob</td>
-											<td>Thornton</td>
-											<td>@fat</td>
-										</tr>
-										<tr>
-											<td>3</td>
-											<td>Larry</td>
-											<td>the Bird</td>
-											<td>@twitter</td>
-										</tr>
-										</tbody>
-									</table>
-								</div>
-							</div>
-							<div class="card-footer">
-								<a href="wallets_orderdeposit.html">
-									Xem tất cả
-								</a>
-							</div>
-						</div>
-					</div>
-					<div class="col-sm-6 col-lg-3">
-						<div class="card">
-							<div class="card-header bg-warning">
-								<a href="#card-collapse-02" data-toggle="collapse" aria-expanded="true">
-									<div class="card-title">
-										Đơn rút tiền
-									</div>
-								</a>
-							</div>
-							<div class="collapse show" id="card-collapse-02">
-								<div class="card-body">
-									<p>
-										Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem id itaque nemo
-										neque nihil perspiciatis possimus quae quam sed sit?
-									</p>
-								</div>
-								<div class="table-responsive">
-									<table class="table">
-										<thead>
-										<tr>
-											<th>#</th>
-											<th>First Name</th>
-											<th>Last Name</th>
-											<th>Username</th>
-										</tr>
-										</thead>
-										<tbody>
-										<tr>
-											<td>1</td>
-											<td>Mark</td>
-											<td>Otto</td>
-											<td>@mdo</td>
-										</tr>
-										<tr>
-											<td>2</td>
-											<td>Jacob</td>
-											<td>Thornton</td>
-											<td>@fat</td>
-										</tr>
-										<tr>
-											<td>3</td>
-											<td>Larry</td>
-											<td>the Bird</td>
-											<td>@twitter</td>
-										</tr>
-										</tbody>
-									</table>
-								</div>
-							</div>
-							<div class="card-footer">
-								<a href="wallets_orderwithdraw.html">
-									Xem tất cả
-								</a>
-							</div>
-						</div>
-					</div>
-					<div class="col-sm-6 col-lg-3">
-						<div class="card">
-							<div class="card-header bg-primary">
-								<a href="#card-collapse-03" data-toggle="collapse" aria-expanded="true">
-									<div class="card-title">
-										Chuyển tiền
-									</div>
-								</a>
-							</div>
-							<div class="collapse show" id="card-collapse-03">
-								<div class="card-body">
-									<div class="p-4 text-center">
-										Chưa có giao dịch
-									</div>
-								</div>
-							</div>
-							<div class="card-footer">
-								<a href="transfer-history.html">
-									Xem tất cả
-								</a>
-							</div>
-						</div>
-					</div>
-					<div class="col-sm-6 col-lg-3">
-						<div class="card">
-							<div class="card-header bg-danger">
-								<a href="#card-collapse-04" data-toggle="collapse" aria-expanded="true">
-									<div class="card-title">
-										Thành viên
-									</div>
-								</a>
-							</div>
-							<div class="collapse show" id="card-collapse-04">
-								<ul class="list-unstyled mb-0 card-list">
-									<li>
-										<div class="info">
-											<a href="user_edit.html">
-												<i class="fas fa-user"></i>
-												ZNRMBCOLMXYG
-											</a>
-											<span class="ml-auto text-muted">
-												(IN)
-											</span>
-										</div>
-										<div class="mail">
-											<i class="fas fa-envelope"></i>
-											bertapprebm@gmail.com
-										</div>
-									</li>
-									<li>
-										<div class="info">
-											<a href="user_edit.html">
-												<i class="fas fa-user"></i>
-												ZNRMBCOLMXYG
-											</a>
-											<span class="ml-auto text-muted">
-												(EN)
-											</span>
-										</div>
-										<div class="mail">
-											<i class="fas fa-envelope"></i>
-											bertapprebm@gmail.com
-										</div>
-									</li>
-									<li>
-										<div class="info">
-											<a href="user_edit.html">
-												<i class="fas fa-user"></i>
-												ZNRMBCOLMXYG
-											</a>
-											<span class="ml-auto text-muted">
-												(VN)
-											</span>
-										</div>
-										<div class="mail">
-											<i class="fas fa-envelope"></i>
-											bertapprebm@gmail.com
-										</div>
-									</li>
-									<li>
-										<div class="info">
-											<a href="user_edit.html">
-												<i class="fas fa-user"></i>
-												ZNRMBCOLMXYG
-											</a>
-											<span class="ml-auto text-muted">
-												(VN)
-											</span>
-										</div>
-										<div class="mail">
-											<i class="fas fa-envelope"></i>
-											bertapprebm@gmail.com
-										</div>
-									</li>
-									<li>
-										<div class="info">
-											<a href="user_edit.html">
-												<i class="fas fa-user"></i>
-												ZNRMBCOLMXYG
-											</a>
-											<span class="ml-auto text-muted">
-												(VN)
-											</span>
-										</div>
-										<div class="mail">
-											<i class="fas fa-envelope"></i>
-											bertapprebm@gmail.com
-										</div>
-									</li>
-								</ul>
-							</div>
-							<div class="card-footer">
-								<a href="users.html">
-									Xem tất cả
-								</a>
-							</div>
-						</div>
-					</div>
-					<div class="col-sm-6 col-lg-3">
-						<div class="card">
-							<div class="card-header bg-secondary">
-								<a href="#card-collapse-05" data-toggle="collapse" aria-expanded="true">
-									<div class="card-title">
-										Đổi thẻ cào
-									</div>
-								</a>
-							</div>
-							<div class="collapse show" id="card-collapse-05">
-								<div class="card-body">
-									<p>
-										Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem id itaque nemo
-										neque nihil perspiciatis possimus quae quam sed sit?
-									</p>
-								</div>
-								<div class="table-responsive">
-									<table class="table">
-										<thead>
-										<tr>
-											<th>#</th>
-											<th>First Name</th>
-											<th>Last Name</th>
-											<th>Username</th>
-										</tr>
-										</thead>
-										<tbody>
-										<tr>
-											<td>1</td>
-											<td>Mark</td>
-											<td>Otto</td>
-											<td>@mdo</td>
-										</tr>
-										<tr>
-											<td>2</td>
-											<td>Jacob</td>
-											<td>Thornton</td>
-											<td>@fat</td>
-										</tr>
-										<tr>
-											<td>3</td>
-											<td>Larry</td>
-											<td>the Bird</td>
-											<td>@twitter</td>
-										</tr>
-										</tbody>
-									</table>
-								</div>
-							</div>
-							<div class="card-footer">
-								<a href="chargings.html">
-									Xem tất cả
-								</a>
-							</div>
-						</div>
-					</div>
-					<div class="col-sm-6 col-lg-5">
-						<div class="card">
-							<div class="card-header bg-success">
-								<a href="#card-collapse-06" data-toggle="collapse" aria-expanded="true">
-									<div class="card-title">
-										Mua mã thẻ
-									</div>
-								</a>
-							</div>
-							<div class="collapse show" id="card-collapse-06">
-								<div class="table-responsive">
-									<table class="table">
-										<thead>
-										<tr>
-											<th>Khách</th>
-											<th>Số tiền</th>
-											<th>SP</th>
-											<th>TT</th>
-											<th>Ngày</th>
+											<th>
+												<label class="form-check-label" for="checkall">
+													<input type="checkbox" id="checkall"
+													       class="form-check-input">
+												</label>
+											</th>
+											<th>ID</th>
+											<th>Tên sản phẩm</th>
+											<th>Hình ảnh</th>
+											<th>Mã sản phẩm</th>
+											<th>Trạng thái</th>
+											<th>Ngày tạo</th>
+											<th>Hành động</th>
 										</tr>
 										</thead>
 										<tbody>
 										<tr>
 											<td>
-												<a href="#">
-													huypham
-												</a>
-												<br>
-												<span>
-													0356136131
-												</span>
+												<label class="form-check-label">
+													<input type="checkbox" name="check[]"
+													       class="form-check-input mycheckbox">
+												</label>
 											</td>
-											<td>97,000 VND</td>
-											<td>2021-03-06 16:52:21</td>
-											<td></td>
-											<td></td>
+											<td>38</td>
+											<td>
+												Thẻ Funcard
+											</td>
+											<td>
+												<img class="image-thumb" src="./assets/images/the-funcard.jpg" alt="">
+											</td>
+											<td>
+												Funcard
+											</td>
+											<td>
+												<div class="custom-control custom-switch">
+													<input type="checkbox" class="custom-control-input"
+													       id="switch-status">
+													<label class="custom-control-label" for="switch-status"></label>
+												</div>
+											</td>
+											<td>
+												2019-01-24 11:21:23
+											</td>
+											<td>
+												<a href="softcard_edit.html" class="btn btn-info btn-sm bg-gradient">
+													<i class="fas fa-pen mr-0"></i>
+												</a>
+												<a href="javascript:void(0)"
+												   class="btn btn-danger btn-sm bg-gradient delete-item">
+													<i class="fas fa-trash mr-0"></i>
+												</a>
+											</td>
 										</tr>
 										<tr>
 											<td>
-												<a href="#">
-													huypham
-												</a>
-												<br>
-												<span>
-													0356136131
-												</span>
+												<label class="form-check-label">
+													<input type="checkbox" name="check[]"
+													       class="form-check-input mycheckbox">
+												</label>
 											</td>
-											<td>97,000 VND</td>
-											<td>2021-03-06 16:52:21</td>
-											<td></td>
-											<td></td>
+											<td>38</td>
+											<td>
+												Thẻ Funcard
+											</td>
+											<td>
+												<img class="image-thumb" src="./assets/images/the-funcard.jpg" alt="">
+											</td>
+											<td>
+												Funcard
+											</td>
+											<td>
+												<div class="custom-control custom-switch">
+													<input type="checkbox" checked class="custom-control-input"
+													       id="switch-status">
+													<label class="custom-control-label" for="switch-status"></label>
+												</div>
+											</td>
+											<td>
+												2019-01-24 11:21:23
+											</td>
+											<td>
+												<a href="softcard_edit.html" class="btn btn-info btn-sm bg-gradient">
+													<i class="fas fa-pen mr-0"></i>
+												</a>
+												<a href="javascript:void(0)"
+												   class="btn btn-danger btn-sm bg-gradient delete-item">
+													<i class="fas fa-trash mr-0"></i>
+												</a>
+											</td>
 										</tr>
 										<tr>
 											<td>
-												<a href="#">
-													huypham
-												</a>
-												<br>
-												<span>
-													0356136131
-												</span>
+												<label class="form-check-label">
+													<input type="checkbox" name="check[]"
+													       class="form-check-input mycheckbox">
+												</label>
 											</td>
-											<td>97,000 VND</td>
-											<td>2021-03-06 16:52:21</td>
-											<td></td>
-											<td></td>
+											<td>38</td>
+											<td>
+												Thẻ Funcard
+											</td>
+											<td>
+												<img class="image-thumb" src="./assets/images/the-funcard.jpg" alt="">
+											</td>
+											<td>
+												Funcard
+											</td>
+											<td>
+												<div class="custom-control custom-switch">
+													<input type="checkbox" class="custom-control-input"
+													       id="switch-status">
+													<label class="custom-control-label" for="switch-status"></label>
+												</div>
+											</td>
+											<td>
+												2019-01-24 11:21:23
+											</td>
+											<td>
+												<a href="softcard_edit.html" class="btn btn-info btn-sm bg-gradient">
+													<i class="fas fa-pen mr-0"></i>
+												</a>
+												<a href="javascript:void(0)"
+												   class="btn btn-danger btn-sm bg-gradient delete-item">
+													<i class="fas fa-trash mr-0"></i>
+												</a>
+											</td>
 										</tr>
 										<tr>
 											<td>
-												<a href="#">
-													huypham
-												</a>
-												<br>
-												<span>
-													0356136131
-												</span>
+												<label class="form-check-label">
+													<input type="checkbox" name="check[]"
+													       class="form-check-input mycheckbox">
+												</label>
 											</td>
-											<td>97,000 VND</td>
-											<td>2021-03-06 16:52:21</td>
-											<td></td>
-											<td></td>
+											<td>38</td>
+											<td>
+												Thẻ Funcard
+											</td>
+											<td>
+												<img class="image-thumb" src="./assets/images/the-funcard.jpg" alt="">
+											</td>
+											<td>
+												Funcard
+											</td>
+											<td>
+												<div class="custom-control custom-switch">
+													<input type="checkbox" checked class="custom-control-input"
+													       id="switch-status">
+													<label class="custom-control-label" for="switch-status"></label>
+												</div>
+											</td>
+											<td>
+												2019-01-24 11:21:23
+											</td>
+											<td>
+												<a href="softcard_edit.html" class="btn btn-info btn-sm bg-gradient">
+													<i class="fas fa-pen mr-0"></i>
+												</a>
+												<a href="javascript:void(0)"
+												   class="btn btn-danger btn-sm bg-gradient delete-item">
+													<i class="fas fa-trash mr-0"></i>
+												</a>
+											</td>
 										</tr>
 										<tr>
 											<td>
-												<a href="#">
-													huypham
-												</a>
-												<br>
-												<span>
-													0356136131
-												</span>
+												<label class="form-check-label">
+													<input type="checkbox" name="check[]"
+													       class="form-check-input mycheckbox">
+												</label>
 											</td>
-											<td>97,000 VND</td>
-											<td>2021-03-06 16:52:21</td>
-											<td></td>
-											<td></td>
+											<td>38</td>
+											<td>
+												Thẻ Funcard
+											</td>
+											<td>
+												<img class="image-thumb" src="./assets/images/the-funcard.jpg" alt="">
+											</td>
+											<td>
+												Funcard
+											</td>
+											<td>
+												<div class="custom-control custom-switch">
+													<input type="checkbox" class="custom-control-input"
+													       id="switch-status">
+													<label class="custom-control-label" for="switch-status"></label>
+												</div>
+											</td>
+											<td>
+												2019-01-24 11:21:23
+											</td>
+											<td>
+												<a href="softcard_edit.html" class="btn btn-info btn-sm bg-gradient">
+													<i class="fas fa-pen mr-0"></i>
+												</a>
+												<a href="javascript:void(0)"
+												   class="btn btn-danger btn-sm bg-gradient delete-item">
+													<i class="fas fa-trash mr-0"></i>
+												</a>
+											</td>
 										</tr>
-										</tbody>
-									</table>
-								</div>
-							</div>
-							<div class="card-footer">
-								<a href="chargings.html">
-									Xem tất cả
-								</a>
-							</div>
-						</div>
-					</div>
-					<div class="col-sm-6 col-lg-4">
-						<div class="card">
-							<div class="card-header bg-success">
-								<a href="#card-collapse-07" data-toggle="collapse" aria-expanded="true">
-									<div class="card-title">
-										Mua mã thẻ
-									</div>
-								</a>
-							</div>
-							<div class="collapse show" id="card-collapse-07">
-								<div class="table-responsive">
-									<table class="table">
-										<thead>
 										<tr>
-											<th>Khách</th>
-											<th>Số tiền</th>
-											<th>SP</th>
-											<th>TT</th>
-											<th>Ngày</th>
-										</tr>
-										</thead>
-										<tbody>
-										<tr>
-											<td colspan="5" class="text-center mb-0 p-4">
-												Chưa có giao dịch
+											<td>
+												<label class="form-check-label">
+													<input type="checkbox" name="check[]"
+													       class="form-check-input mycheckbox">
+												</label>
+											</td>
+											<td>38</td>
+											<td>
+												Thẻ Funcard
+											</td>
+											<td>
+												<img class="image-thumb" src="./assets/images/the-funcard.jpg" alt="">
+											</td>
+											<td>
+												Funcard
+											</td>
+											<td>
+												<div class="custom-control custom-switch">
+													<input type="checkbox" checked class="custom-control-input"
+													       id="switch-status">
+													<label class="custom-control-label" for="switch-status"></label>
+												</div>
+											</td>
+											<td>
+												2019-01-24 11:21:23
+											</td>
+											<td>
+												<a href="softcard_edit.html" class="btn btn-info btn-sm bg-gradient">
+													<i class="fas fa-pen mr-0"></i>
+												</a>
+												<a href="javascript:void(0)"
+												   class="btn btn-danger btn-sm bg-gradient delete-item">
+													<i class="fas fa-trash mr-0"></i>
+												</a>
 											</td>
 										</tr>
 										</tbody>
@@ -973,14 +735,25 @@
 								</div>
 							</div>
 							<div class="card-footer">
-								<a href="chargings.html">
-									Xem tất cả
-								</a>
+								<div class="form-inline">
+									<select name="" class="form-control" id="">
+										<option value="-1">
+											Hành động
+										</option>
+										<option value="">
+											Xoá đơn hàng
+										</option>
+									</select>
+									<button class="btn btn-primary">
+										Thực hiện
+									</button>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
+			<!-- *** End table *** -->
 		</div>
 	</div>
 	<!-- *** End main *** -->
