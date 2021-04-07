@@ -134,7 +134,7 @@ textarea:focus,
 }
 
 .template-administrator .header .navbar .navbar-nav .nav-item .nav-link {
-    color: var(--text-muted);
+    color: var(--text-dark);
     padding-left: 13px;
     padding-right: 13px;
     transition: .2s all ease;
@@ -696,7 +696,7 @@ textarea:focus,
 .template-administrator .card-box .card .card-body,
 .template-administrator .table,
 .template-administrator .card-box .card .card-list li .mail {
-    color: var(--text-muted);
+    color: var(--text-dark);
 }
 
 .template-administrator .page-title .inner {
@@ -965,7 +965,7 @@ textarea:focus,
 .template-administrator .form-text {
     margin-top: 20px;
     font-size: 1em;
-    color: var(--text-muted);
+    color: var(--text-dark);
 }
 
 .template-administrator .form-row .btn {
@@ -1040,7 +1040,7 @@ textarea:focus,
 .template-administrator .custom-switch .custom-control-label {
     cursor: pointer;
     line-height: 1.7;
-    color: var(--text-muted);
+    color: var(--text-dark);
 }
 
 .template-administrator .custom-switch .custom-control-label::before {
