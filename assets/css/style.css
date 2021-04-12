@@ -1007,7 +1007,7 @@ textarea:focus,
     border-radius: 0;
     border-left: 0;
     font-size: 1.05em;
-    line-height: 1.7;
+    line-height: 36px;
 }
 
 .template-administrator .form-inline .form-control:first-child {
