@@ -440,30 +440,34 @@
 			<div class="list-button">
 				<div class="row">
 					<div class="col-md-6">
-						<div class="d-flex">
-							<div class="text-left">
-								<a class="btn btn-info bg-gradient" href="stockcards.html">
-									<i class="fal fa-home"></i>Home
-								</a>
-								<a class="btn btn-success bg-gradient" href="stockcards_import.html">
-									<i class="fal fa-plus"></i> Nhập thẻ
-								</a>
-								<a class="btn btn-secondary bg-gradient" href="statistical_stockcard.html">
-									<i class="fal fa-plus"></i> Hàng tồn
-								</a>
+						<div class="row">
+							<div class="col-md-7">
+								<div class="text-left">
+									<a class="btn btn-info bg-gradient" href="stockcards.html">
+										<i class="fal fa-home"></i>Home
+									</a>
+									<a class="btn btn-success bg-gradient" href="stockcards_import.html">
+										<i class="fal fa-plus"></i> Nhập thẻ
+									</a>
+									<a class="btn btn-secondary bg-gradient" href="statistical_stockcard.html">
+										<i class="fal fa-plus"></i> Hàng tồn
+									</a>
+								</div>
 							</div>
-							<div class="ml-1">
-								<form action="" class="form-inline justify-content-end">
+							<div class="col-md-5 my-3 my-lg-0">
+								<form action="" class="form-inline flex-1-1 justify-content-end w-100">
 									<input type="text" class="form-control" id=""
 									       placeholder="Nhập seri">
-									<button class="btn btn-primary"><i class="fal fa-search"></i>Tìm</button>
+									<div class="d-flex w-100-mobile">
+										<button class="btn btn-primary"><i class="fal fa-search"></i>Tìm</button>
+									</div>
 								</form>
 							</div>
 						</div>
 					</div>
 					<div class="col-md-6">
 						<div class="text-right mt-3 mt-md-0">
-							<form action="" class="form-inline justify-content-end">
+							<form action="" class="form-inline  flex-1-1 justify-content-end">
 								<select name="" class="form-control" id="">
 									<option value="-1">
 										--- Mã dịch vụ ---
@@ -535,8 +539,11 @@
 									<option value="">Chưa bán</option>
 									<option value="">Đã bán</option>
 								</select>
-								<button class="btn btn-primary"><i class="fal fa-search"></i>Lọc</button>
-								<button class="btn btn-success"><i class="fal fa-download"></i>Xuất</button>
+								
+								<div class="d-flex w-100-mobile">
+									<button class="btn btn-primary"><i class="fal fa-search"></i>Lọc</button>
+									<button class="btn btn-success"><i class="fal fa-download"></i>Xuất</button>
+								</div>
 							</form>
 						</div>
 					</div>
@@ -615,7 +622,8 @@
 												1
 											</td>
 											<td>
-												Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi, error?
+												Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi,
+												error?
 											</td>
 											<td>FA92323</td>
 											<td>
