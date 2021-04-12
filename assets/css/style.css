@@ -1072,6 +1072,9 @@ textarea:focus,
     width: 100%;
 }
 
+.template-administrator .form-inline.w-auto .form-control {
+    width: auto;
+}
 .template-administrator .form-inline .form-control:first-child {
     border-left: 1px solid #ced4da;
     border-top-left-radius: .25rem;
