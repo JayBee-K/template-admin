@@ -411,7 +411,7 @@ textarea:focus,
 
 .template-administrator .sidebar > .navbar > .nav > .nav-item > .nav-link {
     /*color: var(--text-sidebar);*/
-    color: var(--text-dark);
+    color: #000;
     padding-right: 30px;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -469,7 +469,7 @@ textarea:focus,
 
 .template-administrator .sidebar > .navbar > .nav > .nav-item .nav > .nav-item > .nav-link {
     padding-left: 40px;
-    color: var(--text-muted);
+    color: #232323;
     padding-top: 10px;
     padding-bottom: 10px;
     font-size: 1em;
@@ -493,7 +493,7 @@ textarea:focus,
 .template-administrator .sidebar > .navbar > .nav > .nav-item > .nav-link[aria-expanded=true] {
     /*background: var(--bg-hover_sidebar) !important;*/
     background-color: var(--bg-body);
-    color: var(--text-dark) !important;
+    color: #000 !important;
 }
 
 .template-administrator .sidebar > .navbar > .nav > .nav-item > .nav-link.active:after,
