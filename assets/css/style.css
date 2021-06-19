@@ -387,6 +387,7 @@ textarea:focus,
     max-height: calc(100% - 60px);
     overflow-x: hidden;
     overflow-y: auto;
+    background: #fff;
 }
 
 .template-administrator .sidebar > .navbar::-webkit-scrollbar {
@@ -968,8 +969,8 @@ textarea:focus,
     margin-bottom: .25rem;
     border-radius: .15rem;
     outline: none !important;
-    box-shadow: none !important;
-    font-size: 0.975em;
+    box-shadow: none;
+    font-size: 0.95em;
     font-weight: 400;
     color: #fff !important;
 }
@@ -1084,6 +1085,8 @@ textarea:focus,
     margin-bottom: 0;
     border-radius: 0;
     white-space: nowrap;
+    background-image: linear-gradient(
+            180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0)) !important;
 }
 
 .template-administrator .form-inline .btn:last-child {
@@ -1095,7 +1098,7 @@ textarea:focus,
 .template-administrator .form-inline .form-control {
     border-radius: 0;
     border-left: 0;
-    font-size: 1.05em;
+    font-size: .95em;
     line-height: 36px;
     width: 100%;
 }
@@ -1386,4 +1389,44 @@ textarea:focus,
 .template-administrator24-switch .checkbox:checked ~ .switch:after {
     background-color: #e3ffe4;
     border-color: #8deaa2;
+}
+
+.btn-small {
+    height: 28px;
+    width: 30px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: .9em !important;
+}
+
+
+.btn-shadow.btn-danger {
+    box-shadow: 0 2px 0 #ab1b29;
+}
+
+.btn-shadow.btn-info {
+    box-shadow: 0 2px 0 #0f6f7e;
+}
+
+.btn-shadow.btn-primary {
+    box-shadow: 0 2px 0 #015cba;
+}
+
+.btn-shadow.btn-success {
+    box-shadow: 0 2px 0 #19752d;
+}
+
+.btn-shadow.btn-warning {
+    box-shadow: 0 2px 0 #b88b04;
+}
+
+.btn-shadow.btn-secondary {
+    box-shadow: 0 2px 0 #40454a;
+}
+
+.btn-small:active {
+    box-shadow: none !important;
+    outline: none !important;
+    transform: translateY(3px);
 }
