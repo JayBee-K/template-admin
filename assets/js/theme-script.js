@@ -110,4 +110,30 @@ $(document).ready(function () {
 		}
 		callSearch($(this));
 	});
+	
+	if ($('[data-toggle=tooltip]').length) {
+		$('[data-toggle="tooltip"]').tooltip();
+	}
+	
+	$('.template-administrator24-switch input').click(function () {
+		let title_on = $(this).data('title-on'),
+			title_off = $(this).data('title-off');
+		if ($(this).is(':checked')) {
+			$(this).attr('data-original-title', title_on).tooltip('hide');
+		} else {
+			$(this).attr('data-original-title', title_off).tooltip('hide');
+		}
+	});
+	
+	if ($('.template-administrator24-switch input').length) {
+		$('.template-administrator24-switch input').each(function (i, e) {
+			if ($(e).data('toggle') == 'tooltip') {
+				if ($(e).is(':checked')) {
+					$(e).attr('data-original-title', $(e).data('title-on'));
+				} else {
+					$(e).attr('data-original-title', $(e).data('title-off'));
+				}
+			}
+		})
+	}
 })

@@ -1091,13 +1091,13 @@ textarea:focus,
 
 .template-administrator .form-inline .btn:last-child {
     border-radius: .25rem;
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
+    /*border-top-left-radius: 0;*/
+    /*border-bottom-left-radius: 0;*/
 }
 
 .template-administrator .form-inline .form-control {
-    border-radius: 0;
-    border-left: 0;
+    /*border-radius: 0;*/
+    /*border-left: 0;*/
     font-size: .95em;
     line-height: 36px;
     width: 100%;
@@ -1107,15 +1107,15 @@ textarea:focus,
     width: auto;
 }
 
-.template-administrator .form-inline .form-control:first-child {
-    border-left: 1px solid #ced4da;
-    border-top-left-radius: .25rem;
-    border-bottom-left-radius: .25rem;
-}
+/*.template-administrator .form-inline .form-control:first-child {*/
+/*    border-left: 1px solid #ced4da;*/
+/*    border-top-left-radius: .25rem;*/
+/*    border-bottom-left-radius: .25rem;*/
+/*}*/
 
-.template-administrator .form-inline .form-control:last-child {
-    border-right: 0;
-}
+/*.template-administrator .form-inline .form-control:last-child {*/
+/*    border-right: 0;*/
+/*}*/
 
 .template-administrator .form-check-label {
     margin-bottom: 0;
@@ -1429,4 +1429,312 @@ textarea:focus,
     box-shadow: none !important;
     outline: none !important;
     transform: translateY(3px);
+}
+
+.template-login {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.template-login .background {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    user-select: none;
+    transform: translateX(-50%);
+    background: linear-gradient(
+            90deg, #274d72, #1b334b);
+    min-height: 300px;
+    max-height: 770px;
+}
+
+.template-login .background > svg {
+    position: absolute;
+    bottom: 0px;
+    left: -1px;
+    right: -1px;
+}
+
+.template-login .background > svg > .svg-banner-shape {
+    fill: #fff;
+}
+
+.template-login .account-main {
+    position: relative;
+    z-index: 21;
+}
+
+.template-login .account-box {
+    display: flex;
+    background: #fff;
+    box-shadow: 0 4px 32px 0 rgb(10 14 29 / 2%), 0 8px 64px 0 rgb(10 14 29 / 8%);
+    border-radius: 6px;
+    align-items: center;
+}
+
+.template-login .account-box .account__content {
+    width: 100%;
+    padding: 36px 56px 48px;
+}
+
+.template-login .account-box .account__content .account__logo {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.template-login .account-box .account__content .account__title {
+    font-size: 2.4em;
+    color: #042e72;
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+.template-login .account-box .account__content .account__desc {
+    margin-top: -35px;
+    margin-bottom: 40px;
+    text-align: center;
+    font-size: 1.1em;
+    color: var(--text-dark);
+}
+
+.template-login .account-box .account__content form {
+    margin-bottom: 0;
+    width: 100%;
+}
+
+.template-login .account-box .account__content .account__group {
+    color: var(--text-dark);
+    border: 1px solid var(--color-border);
+    background-color: var(--bg-white);
+    box-shadow: none;
+    margin-bottom: 24px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 56px;
+    border-radius: 3px;
+    font-size: 17px;
+    transition: border .3s linear;
+    padding: 0 !important;
+}
+
+.template-login .account-box .account__content .account__group .account__label {
+    height: 24px;
+    width: 24px;
+    min-width: 24px;
+    min-height: 24px;
+    font-size: 24px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.template-login .account-box .account__content .account__group .account__label:first-of-type {
+    margin-left: 16px;
+}
+
+.template-login .account-box .account__content .account__group .account__label svg {
+    width: 24px;
+    height: 24px;
+}
+
+.template-login .account-box .account__content .account__group .account__label svg .stroke {
+    fill: none;
+    stroke: #8692b0;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    transition: .3s ease;
+}
+
+.template-login .account-box .account__content .account__group .account__label svg .fill {
+    fill: #8692b0;
+    transition: .3s ease;
+}
+
+.template-login .account-box .account__content .account__group .account__input {
+    position: relative;
+    z-index: 2;
+    float: left;
+    width: 100%;
+    transition: border .3s linear;
+    appearance: none;
+    display: block;
+    box-shadow: none;
+    line-height: 1.42857143;
+    font-weight: inherit;
+    padding: 0px 15px;
+    color: var(--text-dark);
+    font-size: 15px;
+    border-radius: 3px;
+    vertical-align: middle;
+    min-height: 100%;
+    border: none !important;
+    background: transparent !important;
+    height: auto;
+    flex: 1 1 auto;
+}
+
+.template-login .account-box .account__content .account__group .account__input:last-of-type {
+    margin-bottom: 0 !important;
+}
+
+.template-login .account-box .account__content .account__button button {
+    display: flex;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex: 1 auto;
+    background: #042e72;
+    color: var(--bg-white);
+    font-size: 1.3em;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 0 24px;
+    height: 56px;
+    line-height: 28px;
+    border-radius: 3px;
+}
+
+.template-login .account-box .account__content .account__button button:hover {
+    background: #0a254e;
+}
+
+.template-login .account-box .account__content .account__text {
+    color: var(--text-dark);
+}
+
+.color-inherit {
+    color: inherit;
+}
+
+@media screen and (max-width: 991px) {
+
+    .template-login .account-box .account__content {
+        padding: 36px 30px 48px;
+    }
+
+    .template-login .account-box .account__content .account__title {
+        font-size: 2em;
+    }
+
+    .template-login .account-box .account__content .account__desc {
+        font-size: 1em;
+    }
+
+    .template-login .account-box .account__content .account__group {
+        margin-bottom: 30px;
+    }
+
+    .template-login .account-box .account__content .account__group,
+    .template-login .account-box .account__content .account__button button {
+        height: 44px;
+    }
+
+    .template-login .account-box .account__content .account__group .account__label {
+        height: 20px;
+        width: 20px;
+        min-width: 20px;
+        min-height: 20px;
+        font-size: 20px;
+        line-height: 20px;
+    }
+
+    .template-login .account-box .account__content .account__group .account__label svg {
+        height: 20px;
+        width: 20px;
+    }
+}
+
+.checkbox-effect > label {
+    margin: auto;
+    -webkit-user-select: none;
+    user-select: none;
+    cursor: pointer;
+}
+
+.checkbox-effect > label span {
+    display: inline-block;
+    vertical-align: middle;
+    transform: translate3d(0, 0, 0);
+}
+
+.checkbox-effect > label span:first-child {
+    position: relative;
+    width: 18px;
+    height: 18px;
+    border-radius: 3px;
+    transform: scale(1);
+    vertical-align: middle;
+    border: 1px solid #9098A9;
+    transition: all 0.2s ease;
+}
+
+.checkbox-effect > label span:first-child svg {
+    position: absolute;
+    top: 3px;
+    left: 2px;
+    fill: none;
+    stroke: #FFFFFF;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-dasharray: 16px;
+    stroke-dashoffset: 16px;
+    transition: all 0.3s ease;
+    transition-delay: 0.1s;
+    transform: translate3d(0, 0, 0);
+}
+
+.checkbox-effect > label span:first-child:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: #042e72;
+    display: block;
+    transform: scale(0);
+    opacity: 1;
+    border-radius: 50%;
+}
+
+.checkbox-effect > label span:last-child {
+    padding-left: 8px;
+}
+
+.checkbox-effect > label:hover span:first-child {
+    border-color: #042e72;
+}
+
+.checkbox-effect input:checked + label span:first-child {
+    background: #042e72;
+    border-color: #042e72;
+    animation: wave 0.4s ease;
+}
+
+.checkbox-effect input:checked + label span:first-child svg {
+    stroke-dashoffset: 0;
+}
+
+.checkbox-effect input:checked + label span:first-child:before {
+    transform: scale(3.5);
+    opacity: 0;
+    transition: all 0.6s ease;
+}
+
+@keyframes wave {
+    50% {
+        transform: scale(0.9);
+    }
 }
