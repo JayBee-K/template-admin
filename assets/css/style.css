@@ -95,8 +95,7 @@ textarea:focus,
     right: 0;
     left: 0;
     z-index: 40;
-    /*background-color: var(--bg-white);*/
-    background: #2F822F;
+    background: var(--color-main);
     -webkit-box-shadow: 0 0.75rem 1.5rem rgb(18 38 63 / 3%);
     box-shadow: 0 0.75rem 1.5rem rgb(18 38 63 / 3%);
 }
@@ -213,13 +212,13 @@ textarea:focus,
 
 .template-administrator .header .navbar .navbar-nav .search-main .search-inner .search-input {
     width: 100%;
-    height: 34px;
+    height: 100%;
     padding: 0 70px 0 20px;
     opacity: 0;
     position: absolute;
     top: 0;
     left: 0;
-    background: transparent;
+    background: rgba(255, 255, 255, .3);
     box-sizing: border-box;
     border: none;
     outline: none;
@@ -235,7 +234,6 @@ textarea:focus,
 }
 
 .template-administrator .header .navbar .navbar-nav .search-main .search-inner .search-icon {
-    /*color: var(--text-dark);*/
     color: var(--bg-white);
     height: 34px;
     width: 34px;
@@ -247,7 +245,7 @@ textarea:focus,
     float: right;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
-    background: rgba(0, 0, 0, 0.06);
+    background: rgba(255, 255, 255, 0.06);
     border-radius: 50%;
 }
 
@@ -372,7 +370,7 @@ textarea:focus,
 .template-administrator .sidebar .sidebar-logo {
     /*background: var(--bg-light);*/
     text-align: center;
-    background: #489648;
+    background: var(--color-hover);
 }
 
 .template-administrator .sidebar .sidebar-logo .navbar-brand {
@@ -411,7 +409,6 @@ textarea:focus,
 }
 
 .template-administrator .sidebar > .navbar > .nav > .nav-item > .nav-link {
-    /*color: var(--text-sidebar);*/
     color: #000;
     padding-right: 30px;
     padding-top: 10px;
@@ -441,9 +438,6 @@ textarea:focus,
     display: inline-block;
     max-width: 100%;
     width: 100%;
-    /*-webkit-transition: .2s ease-out all;*/
-    /*-o-transition: .2s ease-out all;*/
-    /*transition: .2s ease-out all;*/
 }
 
 .template-administrator .sidebar > .navbar > .nav > .nav-item > .nav-link[data-toggle]:after {
@@ -642,6 +636,7 @@ textarea:focus,
 
     .template-administrator .main {
         margin-left: 0;
+        padding-bottom: 60px;
     }
 
     .template-administrator .main-inner {
@@ -1024,13 +1019,7 @@ textarea:focus,
 }
 
 @media screen and (max-width: 1024px) {
-
-    .template-administrator .form-inline {
-        flex-wrap: wrap;
-        margin: 0 -5px;
-    }
-
-    .template-administrator .form-inline > * {
+    .template-administrator .form-inline > *:not(.row) {
         width: calc(33.33333% - 10px);
         margin: 0 5px 5px;
         border: 1px solid var(--color-border) !important;
@@ -1039,8 +1028,6 @@ textarea:focus,
 
     .template-administrator .form-inline .btn {
         flex: unset;
-        padding-top: 10px;
-        padding-bottom: 10px;
         margin: 0 auto !important;
         border-radius: .25rem !important;
     }
@@ -1059,12 +1046,7 @@ textarea:focus,
 }
 
 @media screen and (max-width: 600px) {
-    .template-administrator .form-inline {
-        flex-wrap: wrap;
-        margin: 0 -5px;
-    }
-
-    .template-administrator .form-inline > * {
+    .template-administrator .form-inline > *:not(.row) {
         width: calc(50% - 10px) !important;
         margin: 0 5px 5px;
         border: 1px solid var(--color-border) !important;
@@ -1073,9 +1055,6 @@ textarea:focus,
 
     .template-administrator .form-inline .btn {
         flex: unset;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        width: 150px;
         margin: 0 auto !important;
     }
 }
@@ -1091,13 +1070,9 @@ textarea:focus,
 
 .template-administrator .form-inline .btn:last-child {
     border-radius: .25rem;
-    /*border-top-left-radius: 0;*/
-    /*border-bottom-left-radius: 0;*/
 }
 
 .template-administrator .form-inline .form-control {
-    /*border-radius: 0;*/
-    /*border-left: 0;*/
     font-size: .95em;
     line-height: 36px;
     width: 100%;
@@ -1106,16 +1081,6 @@ textarea:focus,
 .template-administrator .form-inline.w-auto .form-control {
     width: auto;
 }
-
-/*.template-administrator .form-inline .form-control:first-child {*/
-/*    border-left: 1px solid #ced4da;*/
-/*    border-top-left-radius: .25rem;*/
-/*    border-bottom-left-radius: .25rem;*/
-/*}*/
-
-/*.template-administrator .form-inline .form-control:last-child {*/
-/*    border-right: 0;*/
-/*}*/
 
 .template-administrator .form-check-label {
     margin-bottom: 0;
@@ -1192,9 +1157,16 @@ textarea:focus,
 }
 
 @media screen and (max-width: 768px) {
-    .template-administrator .card-table .card .card-body {
+    .template-administrator .card-table .card .card-header,
+    .template-administrator .card-table .card .card-body,
+    .template-administrator .card-table .card .card-footer {
         padding-left: 10px;
         padding-right: 10px;
+    }
+
+    .template-administrator .card-table .card .card-footer .pagination {
+        justify-content: center;
+        margin-top: 15px;
     }
 }
 
@@ -1736,5 +1708,19 @@ textarea:focus,
 @keyframes wave {
     50% {
         transform: scale(0.9);
+    }
+}
+
+
+@media screen and (min-width: 991px) {
+    .form-inline-button {
+        height: 100%;
+    }
+}
+
+@media screen and (max-width: 990px) {
+    .form-inline-hidden-text {
+        width: 100%;
+        justify-content: center;
     }
 }
