@@ -707,7 +707,7 @@ textarea:focus,
 .template-administrator .card-box .card,
 .template-administrator .list-button,
 .template-administrator .card-table .card,
-.template-administrator .grid-card .card {
+.template-administrator .card-create .card {
     margin-top: 25px;
 }
 
@@ -1072,7 +1072,7 @@ textarea:focus,
     border-radius: .25rem;
 }
 
-.template-administrator .form-inline .form-control {
+.template-administrator .form-control {
     font-size: .95em;
     line-height: 36px;
     width: 100%;
@@ -1134,7 +1134,7 @@ textarea:focus,
 }
 
 .template-administrator .card-table .card .card-body .card-title,
-.template-administrator .grid-card .card .card-body .card-title {
+.template-administrator .card-create .card .card-body .card-title {
     color: var(--text-dark);
     font-size: 1.2em;
     margin-bottom: 7px;
@@ -1723,4 +1723,98 @@ textarea:focus,
         width: 100%;
         justify-content: center;
     }
+}
+
+.form-group .select2-container {
+    width: 100% !important;
+}
+
+.form-group .select2-container--default .select2-selection--multiple {
+    border: 1px solid #ced4da;
+    font-size: .95em;
+    line-height: 36px;
+    height: calc(1.5em + .75rem + 2px);
+    padding: .375rem .75rem;
+    overflow-x: auto;
+    overflow-y: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.form-group .select2-container .select2-selection--multiple::-webkit-scrollbar {
+    height: 4px;
+}
+
+.form-group .select2-container .select2-selection--multiple::-webkit-scrollbar-track {
+    background: #fff;
+}
+
+.form-group .select2-container .select2-selection--multiple::-webkit-scrollbar-thumb {
+    background: #acacac;
+}
+
+.form-group .select2-container .select2-selection--multiple::-webkit-scrollbar-thumb:hover {
+    background: #7b7b7b;
+}
+
+.vieclam-select2 + .select2-container--default .select2-selection--multiple .select2-selection__choice {
+    margin-top: 0;
+    line-height: 1;
+    padding: 5px;
+}
+
+.form-group .select2-container .select2-search--inline .select2-search__field {
+    margin-top: 0;
+    margin-left: 0;
+    white-space: nowrap;
+    height: 100%;
+    line-height: 20px;
+}
+
+.select2-container--default.select2-container--focus .select2-selection--multiple {
+    border-color: #80bdff;
+}
+
+.form-group .select2-container--default .select2-selection--multiple .select2-selection__choice {
+    padding-right: 20px;
+    padding-left: 2px;
+    border-radius: 2px;
+    line-height: 22px;
+    background: var(--color-hover);
+    color: #fff;
+    margin-top: -1px;
+    border: 0;
+    font-size: .9em;
+}
+
+.form-group .select2-container--default .select2-selection--multiple .select2-selection__choice:first-of-type {
+    margin-left: 0;
+}
+
+.form-group .select2-container--default .select2-selection--multiple .select2-selection__choice button {
+    right: 0;
+    left: unset;
+    border-right: 0;
+    border-left: 1px solid #909090;
+    border-radius: 0 2px 2px 0;
+    color: #f0f0f0;
+    transition: .3s all ease;
+    cursor: pointer;
+}
+
+.form-group .select2-container--default .select2-selection--multiple .select2-selection__choice button:hover {
+    background: var(--color-main);
+    color: #fff;
+}
+
+.form-group .select2-container--default .select2-selection--multiple .select2-selection__choice > span {
+    padding-left: 5px;
+    padding-right: 2px;
+}
+
+.form-group .select2-container .select2-selection--multiple .select2-selection__rendered {
+    white-space: nowrap;
+    margin-bottom: 0;
+    display: block;
 }

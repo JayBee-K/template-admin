@@ -136,4 +136,8 @@ $(document).ready(function () {
 			}
 		})
 	}
+	
+	if ($('.custom-select-2').length) {
+		$('.custom-select-2').select2();
+	}
 })
