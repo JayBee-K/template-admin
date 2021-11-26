@@ -374,7 +374,7 @@ textarea:focus,
 }
 
 .template-administrator .sidebar .sidebar-logo .navbar-brand {
-    padding-top: 61px;
+    padding-top: 56px;
     padding-bottom: 0;
     background: transparent center center no-repeat;
     background-size: 60%;
@@ -974,6 +974,16 @@ textarea:focus,
     margin-right: .25rem;
 }
 
+.template-administrator .btn.btn-light {
+    color: var(--text-dark) !important;
+    border-color: #cac9c9;
+    background: #dadada;
+}
+
+.template-administrator .btn.btn-light:hover {
+    background-color: #e2e6ea
+}
+
 .template-administrator .form-title {
     color: var(--text-dark);
     font-size: 1.05em;
@@ -1187,7 +1197,7 @@ textarea:focus,
 }
 
 .template-administrator .table {
-    white-space: nowrap;
+    /*white-space: nowrap;*/
     margin-bottom: 0;
 }
 
@@ -1817,4 +1827,15 @@ textarea:focus,
     white-space: nowrap;
     margin-bottom: 0;
     display: block;
+}
+
+
+.template-administrator .widget-box .card.bg-light .card-body .media .media-body h2,
+.template-administrator .widget-box .card.bg-light .card-body .media .media-body p,
+.template-administrator .widget-box .card.bg-light .card-body .media .avatar i {
+    color: var(--text-dark);
+}
+
+.template-administrator .widget-box .card.bg-light .card-body .media .avatar {
+    background: rgba(0, 0, 0, .075) !important;
 }
